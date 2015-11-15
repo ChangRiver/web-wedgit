@@ -75,6 +75,8 @@ define(['jquery','jqueryUI'],function($,$UI) {
 				width: CFG.width + 'px',
 				height: CFG.height + 'px'
 			})
+
+			return this;
 		},
 		confirm:function() {
 
@@ -90,6 +92,9 @@ define(['jquery','jqueryUI'],function($,$UI) {
 				this.handlers[type] = [];
 			}
 			this.handlers[type].push(handler);
+
+			//为了链式调用
+			return this;
 		},
 		//fire 用于触发
 		fire:function(type, data) {

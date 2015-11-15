@@ -21,11 +21,12 @@ require(['jquery','jqueryUI','window'],function($,$UI,w) {
 			// skinClassName:'window_skin_a',
 			isDraggable:true,
 			dragHandler:".window_header"
+		}).on("alert",function(){alert("the second alert handler")
+
+		}).on("close",function(){alert("the second close handler")
 		});
 
 		//绑定自定义事件
-		win.on("alert",function(){alert("the second alert handler")});
 		win.on("alert",function(){alert("the third alert handler")});
-		win.on("close",function(){alert("the second close handler")});
 	})
 })
