@@ -13,9 +13,9 @@ require(['jquery', 'Dialog'],function($, Dialog) {
     });
 
     dialog.show().then(function() {
-      alert('你点击了确认按钮.');
+      console.log('你点击了确认按钮.');
     }).catch(function() {
-      alert('你点击了取消按钮.');
+      console.log('你点击了取消按钮.');
     })
   })
 });

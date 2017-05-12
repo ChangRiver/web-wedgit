@@ -24,7 +24,7 @@ define(['jquery'],function($) {
           '<div class="content">'+ this.config.content + '</div>' +
           '<div class="footer">' +
             '<button class="cancel">' + this.config.text4cancelBtn +'</button>' +
-            '<button class="cancel">' + this.config.text4confirmBtn +'</button>' +
+            '<button class="confirm">' + this.config.text4confirmBtn +'</button>' +
           '</div>' +
         '</div>' +
       '</div>'
