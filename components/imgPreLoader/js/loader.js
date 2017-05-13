@@ -1,4 +1,4 @@
-define(function() {
+(function() {
 
   function isArray(obj) {
     return Object.prototype.toString.call(obj).slice(8, -1) === 'Array';
@@ -38,5 +38,8 @@ define(function() {
     }, timeout * total);
   }
 
-  return loader;
-});
+  typeof define === "function" && define.amd ? define(function() {
+    return loader
+  }) : window.imgLoader = loader;
+})();
+
