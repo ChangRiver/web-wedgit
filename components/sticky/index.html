@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>Sticky.js</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="http://cdn.bootcss.com/holder/2.9.3/holder.min.js"></script>
+    <style type="text/css">
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        #main-container .row + .row {
+            margin-top: 15px;
+        }
+
+        .sticky-wrapper {
+            margin-bottom: 10px;
+            height: 52px;
+        }
+
+        .sticky {
+            border: 1px solid #337ab7;
+            background: #fff;
+            padding: 5px;
+        }
+
+        .sticky--in-top {
+            position: fixed;
+            z-index: 1000;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Stick Demo</a>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron">
+    <div class="container">
+        <h1>Hello, world!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis, deleniti dolores esse est, exercitationem facere, itaque laborum nobis nostrum pariatur praesentium quae quod quos repellat rerum sapiente similique unde.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facilis mollitia porro quam, quo
+            voluptate? Eligendi esse eum fugit hic, ipsam minus modi odit provident quidem, quod sit velit
+            voluptate.</p>
+    </div>
+</div>
+<div class="container sticky-wrapper">
+    <ul id="sticky" data-target="#main-container" class="sticky nav nav-pills">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+</div>
+<div id="main-container" class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="holder.js/400x200">
+            </a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="holder.js/400x200">
+            </a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="holder.js/400x200">
+            </a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="holder.js/400x200">
+            </a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="holder.js/400x200">
+            </a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="holder.js/400x200">
+            </a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="holder.js/400x200">
+            </a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="holder.js/400x200">
+            </a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="holder.js/400x200">
+            </a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="holder.js/400x200">
+            </a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="holder.js/400x200">
+            </a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="holder.js/400x200">
+            </a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+    </div>
+</div>
+<footer style="background: #222;height: 1400px;color:#fff">
+    <div class="container">
+        <h1>Sticky Demo</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque doloribus eius id, obcaecati porro soluta tempora? Architecto blanditiis delectus, expedita, facere, hic ipsum maiores possimus quo repellendus tempore veniam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aperiam at consectetur culpa cupiditate delectus ducimus id iste maiores nam necessitatibus neque, quos reiciendis rem sapiente tempore tenetur totam.</p>
+    </div>
+</footer>
+<script src="../../libs/jquery-3.2.0.js"></script>
+<script data-main="./js/main.js" src="../../libs/require.js"></script>
+<!-- <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+</body>
+</html>
